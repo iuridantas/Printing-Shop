@@ -114,11 +114,6 @@ export function Header() {
                 Contato
               </a>
             </li>
-            <li>
-              <a href="#localizacao" className="container-link">
-                Localização
-              </a>
-            </li>
           </ul>
         </nav>
       </Container>

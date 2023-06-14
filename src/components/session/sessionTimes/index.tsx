@@ -39,8 +39,8 @@ export function SessionTimes() {
   };
 
   return (
-  <section aria-label="Sobre Nós">
-    <TimesSession id="sobre-nos">
+  <section aria-label="Horário de atendimento">
+    <TimesSession id="horarios">
       <h2>Horário de atendimento</h2>
       <div className="hours-container">
         <h3>
