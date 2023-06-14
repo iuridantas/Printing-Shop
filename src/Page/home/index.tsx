@@ -1,5 +1,6 @@
 import { SessionAboutUs } from '../../components/session/sessionAboutUs';
 import { SessionInitial } from '../../components/session/sessionInitial';
+import { SessionTimes } from '../../components/session/sessionTimes';
 import { Container, WhatsAppButton, WhatsApp } from './style';
 
 export function Home() {
@@ -19,6 +20,7 @@ export function Home() {
       </WhatsAppButton>
       <SessionInitial />
       <SessionAboutUs/>
+      <SessionTimes/>
     </Container>
   );
 }
