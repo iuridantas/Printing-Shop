@@ -1,3 +1,4 @@
+import { SessionAboutUs } from '../../components/session/sessionAboutUs';
 import { SessionInitial } from '../../components/session/sessionInitial';
 import { Container, WhatsAppButton, WhatsApp } from './style';
 
@@ -17,6 +18,7 @@ export function Home() {
         />
       </WhatsAppButton>
       <SessionInitial />
+      <SessionAboutUs/>
     </Container>
   );
 }

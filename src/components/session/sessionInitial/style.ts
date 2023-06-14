@@ -6,7 +6,7 @@ export const InitialSession = styled.div`
 
   .text-container {
     position: absolute;
-    top: 30%;
+    top: 15%;
     text-align: center;
     z-index: 2;
   }
@@ -31,20 +31,20 @@ export const InitialSession = styled.div`
 
   @media (max-width: 600px) {
     img {
-      width: 100%;
-      height: 250px;
-    }
+    width: 100%;
+    height: 250px;
+  }
 
-    .text-container {
-      top: 18%;
-    }
+  .text-container {
+    top: 2%;
+  }
 
-    .front-heading {
-      font-size: 2rem;
-    }
+  .front-heading {
+    font-size: 2rem;
+  }
 
-    .sub-heading {
-      font-size: 1.2rem;
-    }
+  .sub-heading {
+    font-size: 1.2rem;
+  }
   }
 `;

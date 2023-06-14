@@ -3,7 +3,7 @@ import { InitialSession } from './style';
 export function SessionInitial() {
   return (
     <footer>
-      <section aria-label="Links de mídia social">
+      <section aria-label="Seção Inicial do Site">
         <InitialSession id="inicio">
           <img
             src="/img/fundo.jpg"
