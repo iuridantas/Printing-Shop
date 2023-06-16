@@ -21,7 +21,7 @@ export function Home() {
         />
       </WhatsAppButton>
       <SessionInitial />
-      <SessionAboutUs />
+      <SessionAboutUs/>
       <SessionProductAndService/>
       <SessionTimes />
       <SessionContact />

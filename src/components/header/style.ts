@@ -7,6 +7,11 @@ export const Container = styled.div`
   padding: 20px 0;
   width: 100%;
   border-bottom: dotted;
+  background-color: #fff !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 
   img {
     width: 130px;

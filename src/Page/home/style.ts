@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin-top: 160px; 
 `;
 
 export const WhatsAppButton = styled.a`

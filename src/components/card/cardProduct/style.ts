@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { AiOutlineClose } from 'react-icons/ai';
+import { FaQuestionCircle } from 'react-icons/fa';
 
 export const CardSession = styled.div`
   display: flex;
@@ -7,7 +8,6 @@ export const CardSession = styled.div`
   box-shadow: 0px 2px 2px #ef1d2a;
   margin: 30px 0;
   transition: all 0.3s ease;
-  cursor: pointer;
 
   img {
     width: 200px;
@@ -37,19 +37,24 @@ export const CardSession = styled.div`
 
   @media (max-width: 600px) {
     margin: 20px auto;
+    width: 90%;
 
     img {
-      width: 150px;
-      height: 150px;
+      width: 250px;
+      height: 250px;
       margin: 0 auto;
     }
 
     h2 {
-      font-size: 1.4rem;
+      font-size: 1.1rem !important;
+    }
+
+    h3 {
+      font-size: 1rem !important;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1rem !important;
     }
   }
 `;
@@ -67,8 +72,7 @@ export const FullScreenCard = styled.div`
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9999;
   color: white;
-  
-  
+
   p {
     text-align: justify;
     font-size: 2rem;
@@ -76,32 +80,38 @@ export const FullScreenCard = styled.div`
     margin: 0 15%;
   }
 
-  button {
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    font-size: 1.5rem;
-  }
-
-  button:hover{
-    color: red;
+  @media (max-width: 600px) {
+    p {
+      font-size: 1.4rem;
+    }
   }
 `;
 
 export const ButtonIcon = styled(AiOutlineClose)`
-  position: absolute;
-  top: 250px;
-  right: 150px;
   color: white;
-  border: none;
   cursor: pointer;
   font-size: 50px;
   z-index: 1;
+  margin-top: 20px;
 
   &:hover {
     color: red;
+  }
+
+  @media (max-width: 600px) {
+    color: red;
+  }
+`;
+
+export const DescriptionIcon = styled(FaQuestionCircle)`
+  position: relative;
+  color: #000000;
+  cursor: pointer;
+  font-size: 20px;
+  top:5px;
+  left: 310px;
+
+  @media (max-width: 600px) {
+    left: 320px;
   }
 `;

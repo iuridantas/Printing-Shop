@@ -4,6 +4,7 @@ export const ContactSession = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px auto;
 
   div {
     display: flex;
@@ -29,14 +30,12 @@ export const ContactSession = styled.div`
     display: flex;
     font-size: 1.4rem;
     align-items: center;
-    font-weight: bold;
   }
 
   p {
     display: flex;
     font-size: 1.4rem;
     align-items: center;
-    font-weight: bold;
   }
 
   span {

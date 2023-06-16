@@ -40,7 +40,12 @@ export function Header() {
         if (target) {
           const targetElement = document.getElementById(target);
           if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
+            const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+            const targetOffset = targetElement.offsetTop - headerHeight;
+            window.scrollTo({
+              top: targetOffset,
+              behavior: 'smooth',
+            });
           }
         }
         if (nav) {
@@ -59,7 +64,12 @@ export function Header() {
           if (target) {
             const targetElement = document.getElementById(target);
             if (targetElement) {
-              targetElement.scrollIntoView({ behavior: 'smooth' });
+              const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+              const targetOffset = targetElement.offsetTop - headerHeight;
+              window.scrollTo({
+                top: targetOffset,
+                behavior: 'smooth',
+              });
             }
           }
           if (nav) {
@@ -90,27 +100,27 @@ export function Header() {
           </button>
           <ul id="menu" role="menu">
             <li>
-              <a href="#inicio" className="container-link">
+              <a href="inicio" className="container-link">
                 Início
               </a>
             </li>
             <li>
-              <a href="#sobre-nos" className="container-link">
+              <a href="sobre-nos" className="container-link">
                 Sobre Nós
               </a>
             </li>
             <li>
-              <a href="#produtos-servicos" className="container-link">
+              <a href="produtos-servicos" className="container-link">
                 Produtos e Serviços
               </a>
             </li>
             <li>
-              <a href="#horarios" className="container-link">
+              <a href="horarios" className="container-link">
                 Horários
               </a>
             </li>
             <li>
-              <a href="#contato" className="container-link">
+              <a href="contato" className="container-link">
                 Contato
               </a>
             </li>

@@ -2,8 +2,8 @@ import { InitialSession } from './style';
 
 export function SessionInitial() {
   return (
-      <section aria-label="Seção Inicial do Site">
-        <InitialSession id="inicio">
+      <section aria-label="Seção Inicial do Site" id="inicio">
+        <InitialSession>
           <img
             src="/img/fundo.jpg"
             alt="Foto de fundo"
