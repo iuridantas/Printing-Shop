@@ -28,6 +28,7 @@ export const ProductAndServiceSession = styled.div`
 
     h3 {
       font-size: 1.2rem;
+      margin: 0 10px;
     }
 
     section {
