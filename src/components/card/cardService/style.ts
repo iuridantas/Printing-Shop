@@ -82,7 +82,7 @@ export const FullScreenCard = styled.div`
 
   @media (max-width: 600px) {
     p {
-      font-size: 1.4rem;
+      font-size: 1rem;
     }
   }
 `;
