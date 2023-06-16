@@ -2,7 +2,6 @@ import { AboutUsSession } from './style';
 
 export function SessionAboutUs() {
   return (
-    <footer>
       <section aria-label="Sobre Nós">
         <AboutUsSession id="sobre-nos">
           <h2>Sobre Nós</h2>
@@ -31,6 +30,5 @@ export function SessionAboutUs() {
           </p>
         </AboutUsSession>
       </section>
-    </footer>
   );
 }

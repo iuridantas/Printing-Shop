@@ -6,7 +6,7 @@ export const InitialSession = styled.div`
 
   .text-container {
     position: absolute;
-    top: 15%;
+    top: 100px;
     text-align: center;
     z-index: 2;
   }
@@ -36,7 +36,7 @@ export const InitialSession = styled.div`
   }
 
   .text-container {
-    top: 2%;
+    top: 50px;
   }
 
   .front-heading {

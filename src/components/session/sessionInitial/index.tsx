@@ -2,7 +2,6 @@ import { InitialSession } from './style';
 
 export function SessionInitial() {
   return (
-    <footer>
       <section aria-label="Seção Inicial do Site">
         <InitialSession id="inicio">
           <img
@@ -18,6 +17,5 @@ export function SessionInitial() {
           </div>
         </InitialSession>
       </section>
-    </footer>
   );
 }
