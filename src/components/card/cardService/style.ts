@@ -111,6 +111,6 @@ export const DescriptionIcon = styled(FaQuestionCircle)`
   left: 310px;
 
   @media (max-width: 600px) {
-    left: 320px;
+    left: 90%;
   }
 `;

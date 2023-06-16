@@ -24,7 +24,7 @@ export const AboutUsSession = styled.div`
     }
 
     p {
-      margin: 10px auto;
+      margin: 10px 20px;
       font-size: 1rem;
     }
   }
