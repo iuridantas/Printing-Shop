@@ -61,7 +61,7 @@ const products = [
     photo: 'img/papel_foto.jpeg',
     description:
       'Proteja suas memórias com nossa embalagem de papel fotográfico! Nossa embalagem de alta qualidade é projetada para armazenar e preservar suas fotos preciosas. Feita com materiais duráveis e resistentes, nossa embalagem protege suas fotos contra danos, poeira e umidade. Com um design elegante e funcional, você pode armazenar e organizar suas fotos de forma conveniente. Mantenha suas memórias vivas e em segurança com nossa embalagem de papel fotográfico. Faça seu pedido hoje mesmo e preserve suas lembranças mais preciosas!',
-    price: 'R$70,00 por unidade',
+    price: 'R$15,00 o Pacote',
   },
 ];
 

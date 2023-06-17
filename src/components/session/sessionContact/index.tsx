@@ -9,7 +9,7 @@ export function SessionContact() {
         <h2>Entre em contato</h2>
         <div>
           <a
-            href="https://instagram.com/j.p_impressaodigital?igshid=MzRlODBiNWFlZA=="
+            href="https://instagram.com/jprint_digital?igshid=MzRlODBiNWFlZA=="
             rel="noopener noreferrer"
             target="_blank"
             aria-label="Perfil do Instagram de JPrint Digital"
@@ -22,7 +22,7 @@ export function SessionContact() {
               />
               <span>Instagram</span>
             </h3>
-            <p>j.p_impressaodigital</p>
+            <p>jprint_digital</p>
           </a>
           <a
             href="https://api.whatsapp.com/send?phone=5577988621654&text=Ol%C3%A1%20JPrint%20Digital,%20vim%20atrav%C3%A9s%20do%20seu%20site,%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es."

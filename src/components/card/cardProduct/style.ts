@@ -12,7 +12,7 @@ export const CardSession = styled.div`
   img {
     width: 200px;
     height: 200px;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 
   h2 {
@@ -42,7 +42,7 @@ export const CardSession = styled.div`
     img {
       width: 250px;
       height: 250px;
-      margin: 0 auto;
+      margin: 10px auto;
     }
 
     h2 {
