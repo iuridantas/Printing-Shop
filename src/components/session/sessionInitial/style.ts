@@ -36,7 +36,7 @@ export const InitialSession = styled.div`
   }
 
   .text-container {
-    top: 50px;
+    top: 42px;
   }
 
   .front-heading {

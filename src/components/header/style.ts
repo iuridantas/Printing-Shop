@@ -62,14 +62,17 @@ export const Container = styled.div`
       display: flex;
       flex-direction: column;
       position: fixed;
-      top: 168px;
+      top: 164px;
       right: -100%;
       height: 100vh;
-      width: 60%;
       background-color: #ffffff;
       transition: 0.6s;
       z-index: 1000;
-      margin-right: 8px;
+    }
+
+    li {
+      margin:0 8px;
+      text-align:center;
     }
 
     nav.active ul {
@@ -78,7 +81,7 @@ export const Container = styled.div`
 
     a {
       font-size: 1.4rem;
-      padding: 16px 0;
+      padding: 8px 0;
     }
 
     button {

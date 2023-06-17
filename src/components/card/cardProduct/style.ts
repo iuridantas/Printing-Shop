@@ -6,7 +6,7 @@ export const CardSession = styled.div`
   display: flex;
   flex-direction: column;
   box-shadow: 0px 2px 2px #ef1d2a;
-  margin: 30px 0;
+  margin: 20px 0;
   transition: all 0.3s ease;
 
   img {
@@ -18,13 +18,11 @@ export const CardSession = styled.div`
   h2 {
     font-size: 1.5rem !important;
     text-align: center;
-    margin-bottom: 10px;
   }
 
   h3 {
     font-size: 1.3rem !important;
     text-align: center;
-    margin: 10px 0;
     line-height: 1.5;
   }
 
@@ -42,7 +40,6 @@ export const CardSession = styled.div`
     img {
       width: 250px;
       height: 250px;
-      margin: 10px auto;
     }
 
     h2 {
@@ -90,7 +87,7 @@ export const FullScreenCard = styled.div`
 export const ButtonIcon = styled(AiOutlineClose)`
   color: white;
   cursor: pointer;
-  font-size: 50px;
+  font-size: 32px;
   z-index: 1;
   margin-top: 20px;
 
@@ -100,6 +97,8 @@ export const ButtonIcon = styled(AiOutlineClose)`
 
   @media (max-width: 600px) {
     color: red;
+    font-size: 16px;
+    margin-top: 10px;
   }
 `;
 

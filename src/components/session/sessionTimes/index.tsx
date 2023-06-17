@@ -4,6 +4,7 @@ import { ptBR } from 'date-fns/locale';
 import { TimesSession } from './style';
 
 export function SessionTimes() {
+  
   const week = [
     'Segunda',
     'Terça',
@@ -14,7 +15,7 @@ export function SessionTimes() {
     'Domingo',
     'Feriado',
   ];
-
+  
   const hours = [
     '08:00 às 18:00',
     '08:00 às 18:00',
@@ -39,28 +40,28 @@ export function SessionTimes() {
   };
 
   return (
-  <section aria-label="Horário de atendimento" id="horarios">
-    <TimesSession>
-      <h2>Horário de atendimento</h2>
-      <div className="hours-container">
-        <h3>
-          Hoje ({capitalize(format(currentDate, 'iiii', { locale: ptBR }))})
-        </h3>
-        <h3>{hours[getDay(currentDate)]}</h3>
-      </div>
-      {showAllHours && (
-        <div>
-          {week.map((day, index) => (
-            <h3 key={day}>
-              {day}: {hours[index]}
-            </h3>
-          ))}
+    <section aria-label="Horário de atendimento" id="horarios">
+      <TimesSession>
+        <h2>Horário de atendimento</h2>
+        <div className="hours-container">
+          <h3>
+            Hoje ({capitalize(format(currentDate, 'iiii', { locale: ptBR }))})
+          </h3>
+          <h3>{hours[(getDay(currentDate) + 6) % 7]}</h3>
         </div>
-      )}
-      <button onClick={handleClick}>
-        {showAllHours ? 'Ver menos' : 'Ver todos os horários'}
-      </button>
-    </TimesSession>
-  </section>
+        {showAllHours && (
+          <div>
+            {week.map((day, index) => (
+              <h3 key={day}>
+                {day}: {hours[index]}
+              </h3>
+            ))}
+          </div>
+        )}
+        <button onClick={handleClick}>
+          {showAllHours ? 'Ver menos' : 'Ver todos os horários'}
+        </button>
+      </TimesSession>
+    </section>
   );
 }

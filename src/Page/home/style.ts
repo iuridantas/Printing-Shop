@@ -7,17 +7,18 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 160px; 
+  margin-top: 160px;
 `;
 
 export const WhatsAppButton = styled.a`
   position: fixed;
   top: 91%;
-  left: 93%;
+  left: 96%;
   z-index: 9999;
 
   @media (max-width: 600px) {
-    display: none;
+    top: 85%;
+    left: 2%;
   }
 `;
 
@@ -27,4 +28,8 @@ export const WhatsApp = styled(ImWhatsapp)`
   padding: 3px;
   color: white;
   background-color: green;
+
+  @media (max-width: 600px) {
+    font-size: 35px;
+  }
 `;
