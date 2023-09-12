@@ -4,7 +4,8 @@ export const ContactSession = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px auto;
+  margin: 10px auto;
+  max-width: 1440px;
 
   div {
     display: flex;

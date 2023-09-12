@@ -16,21 +16,28 @@ export function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    const isContentLoaded = sessionStorage.getItem('isContentLoaded');
+
+    if (isContentLoaded) {
       setIsLoading(false);
-    }, 3000);
+    } else {
+      setTimeout(() => {
+        setIsLoading(false);
+        sessionStorage.setItem('isContentLoaded', 'true');
+      }, 2000);
+    }
   }, []);
 
   return (
     <Container aria-label="Página inicial">
       {isLoading ? (
-           <LoaderSection>
-           <Slider i={0} />
-           <Slider i={1} />
-           <Slider i={2} />
-           <Slider i={3} />
-           <Slider i={4} />
-         </LoaderSection>
+        <LoaderSection>
+          <Slider i={0} />
+          <Slider i={1} />
+          <Slider i={2} />
+          <Slider i={3} />
+          <Slider i={4} />
+        </LoaderSection>
       ) : (
         <>
           <WhatsAppButton

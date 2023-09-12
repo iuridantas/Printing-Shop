@@ -1,17 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px 0;
-  width: 100%;
-  border-bottom: dotted;
-  background-color: #fff !important;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
 
   img {
     width: 130px;
@@ -19,10 +16,9 @@ export const Container = styled.div`
   }
 
   ul {
-    padding: 0px;
     display: flex;
     list-style: none;
-    gap: 16px;
+    gap: 20px;
   }
 
   .container-link {
@@ -30,7 +26,7 @@ export const Container = styled.div`
     text-decoration: none;
     cursor: pointer;
     color: #000000;
-    font-size: 1.5rem;
+    font-size: 24px;
     border-radius: 8px;
     width: auto;
     padding: 10px;
@@ -38,10 +34,6 @@ export const Container = styled.div`
     box-shadow: 0px 2px 2px #ef1d2a;
     transform: translate(0px, 0px);
     transition: all 0.3s ease-in-out;
-  }
-
-  .container-link:last-of-type {
-    margin-right: 0;
   }
 
   .container-link:hover {
@@ -55,42 +47,85 @@ export const Container = styled.div`
   }
 
   @media (max-width: 600px) {
-    padding: 16px 8px;
-    justify-content: space-between;
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      position: fixed;
-      top: 164px;
-      right: -100%;
-      height: 100vh;
-      background-color: #ffffff;
-      transition: 0.6s;
-      z-index: 1000;
+    div {
+      padding: 32px 16px;
     }
 
-    li {
-      margin:0 8px;
-      text-align:center;
+    ul {
+      padding: 0 20px;
+      display: block;
+      position: absolute;
+      background-color: #ffffff;
+      width: 100%;
+      top: 194px;
+      right: 0;
+      height: 0;
+      transition: 0.6s;
+      z-index: 1000;
+      visibility: hidden;
+      overflow-y: hidden;
     }
 
     nav.active ul {
-      right: 0;
+      height: calc(100vh - 194px);
+      visibility: visible;
+      overflow-y: auto;
     }
 
     a {
-      font-size: 1.4rem;
-      padding: 8px 0;
+      font-size: 23px;
+      padding: 16px 0;
+      margin: 16px 0;
     }
 
     button {
       display: flex;
-      font-size: 2rem;
+      font-size: 32px;
       background: none;
       color: #000000;
       border: none;
       cursor: pointer;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 820px) {
+  div {
+    padding: 32px 16px;
+  }
+
+  ul {
+    padding: 0 20px;
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    top: 194px;
+    right: 0;
+    height: 0;
+    transition: 0.6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  nav.active ul {
+    height: calc(100vh - 194px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  a {
+    padding: 16px 0;
+    margin: 16px 0;
+  }
+
+  button {
+    display: flex;
+    font-size: 40px;
+    background: none;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+  }
+}
 `;

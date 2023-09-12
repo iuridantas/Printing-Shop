@@ -8,6 +8,7 @@ export const CardSession = styled.div`
   box-shadow: 0px 2px 2px #ef1d2a;
   margin: 20px 0;
   transition: all 0.3s ease;
+  width: 320px;
 
   img {
     width: 200px;
@@ -107,8 +108,8 @@ export const DescriptionIcon = styled(FaQuestionCircle)`
   color: #000000;
   cursor: pointer;
   font-size: 20px;
-  top:5px;
-  left: 310px;
+  top: 5px;
+  left: 285px;
 
   @media (max-width: 600px) {
     left: 90%;

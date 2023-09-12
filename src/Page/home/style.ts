@@ -2,12 +2,8 @@ import styled, { keyframes } from 'styled-components';
 import { ImWhatsapp } from 'react-icons/im';
 
 export const Container = styled.div`
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 160px;
 `;
 
 export const WhatsAppButton = styled.a`
@@ -19,6 +15,11 @@ export const WhatsAppButton = styled.a`
   @media (max-width: 600px) {
     top: 85%;
     left: 2%;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    top: 40%;
+    left: 93%;
   }
 `;
 
@@ -75,7 +76,7 @@ export const Slider = styled.div<{ i: number }>`
   position: relative;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;

@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const TimesSession = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin: 10px auto;
+  max-width: 1440px;
 
   h2 {
     font-size: 2rem;
@@ -21,12 +22,13 @@ export const TimesSession = styled.div`
   }
 
   button {
+    margin: 0 auto;
     cursor: pointer;
     color: #ef1d2a;
     font-size: 1.5rem;
     margin-top: 10px;
     border-radius: 8px;
-    width: auto;
+    width: 250px;
     padding: 5px;
     border: none;
     transition: all 0.3s ease-in-out;

@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const ProductAndServiceSession = styled.div`
-  margin-top: 20px;
-  
+  margin: 10px auto;
+  max-width: 1440px;
+
   h2 {
     font-size: 2rem;
     text-align: center;
@@ -15,8 +16,9 @@ export const ProductAndServiceSession = styled.div`
   }
 
   section {
-    display: grid;
-    grid-template-columns: repeat(4, 346px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
   }
 
@@ -29,11 +31,6 @@ export const ProductAndServiceSession = styled.div`
     h3 {
       font-size: 1.2rem;
       margin: 0 10px;
-    }
-
-    section {
-      display: flex;
-      flex-direction: column;
     }
   }
 `;

@@ -63,23 +63,23 @@ export function CardService() {
   };
 
   return (
-    <section aria-label="card dos produtos">
-      {services.map((product, index) => (
+    <section aria-label="card dos serviços">
+      {services.map((service, index) => (
         <CardSession
           key={index}
-          aria-label="card dos produtos"
+          aria-label="card dos serviços"
           onClick={() => handleCardClick(index)}
         >
-          <DescriptionIcon onClick={() => handleCardClick(index)}/>
-          <h2>{product.name}</h2>
-          <img src={product.photo} alt={product.name} />
-          <h3>Preço: {product.price}</h3>
+          <DescriptionIcon onClick={() => handleCardClick(index)} />
+          <h2>{service.name}</h2>
+          <img src={service.photo} alt={service.name} />
+          <h3>Preço: {service.price}</h3>
         </CardSession>
       ))}
       {selectedCardIndex !== null && (
         <FullScreenCard>
           <p>{services[selectedCardIndex].description}</p>
-          <ButtonIcon onClick={handleFullScreenCardClose}/>
+          <ButtonIcon onClick={handleFullScreenCardClose} />
         </FullScreenCard>
       )}
     </section>

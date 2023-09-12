@@ -40,7 +40,8 @@ export function Header() {
         if (target) {
           const targetElement = document.getElementById(target);
           if (targetElement) {
-            const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+            const headerHeight =
+              document.querySelector('header')?.offsetHeight || 0;
             const targetOffset = targetElement.offsetTop - headerHeight;
             window.scrollTo({
               top: targetOffset,
@@ -64,7 +65,8 @@ export function Header() {
           if (target) {
             const targetElement = document.getElementById(target);
             if (targetElement) {
-              const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+              const headerHeight =
+                document.querySelector('header')?.offsetHeight || 0;
               const targetOffset = targetElement.offsetTop - headerHeight;
               window.scrollTo({
                 top: targetOffset,
@@ -83,49 +85,51 @@ export function Header() {
   return (
     <header>
       <Container aria-label="Menu de navegação principal">
-        <img
-          src="/img/logo.jpeg"
-          alt="logo"
-          aria-label="Logotipo da JPrint Digital"
-        />
-        <nav id="nav">
-          <button
-            id="btn-mobile"
-            aria-label="Abrir Menu"
-            aria-haspopup="true"
-            aria-controls="menu"
-            aria-expanded="false"
-          >
-            <AiOutlineMenu />
-          </button>
-          <ul id="menu" role="menu">
-            <li>
-              <a href="inicio" className="container-link">
-                Início
-              </a>
-            </li>
-            <li>
-              <a href="sobre-nos" className="container-link">
-                Sobre Nós
-              </a>
-            </li>
-            <li>
-              <a href="produtos-servicos" className="container-link">
-                Produtos e Serviços
-              </a>
-            </li>
-            <li>
-              <a href="horarios" className="container-link">
-                Horários
-              </a>
-            </li>
-            <li>
-              <a href="contato" className="container-link">
-                Contato
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div>
+          <img
+            src="/img/logo.jpeg"
+            alt="logo"
+            aria-label="Logotipo da JPrint Digital"
+          />
+          <nav id="nav">
+            <button
+              id="btn-mobile"
+              aria-label="Abrir Menu"
+              aria-haspopup="true"
+              aria-controls="menu"
+              aria-expanded="false"
+            >
+              <AiOutlineMenu />
+            </button>
+            <ul id="menu" role="menu">
+              <li>
+                <a href="inicio" className="container-link">
+                  Início
+                </a>
+              </li>
+              <li>
+                <a href="sobre-nos" className="container-link">
+                  Sobre Nós
+                </a>
+              </li>
+              <li>
+                <a href="produtos-servicos" className="container-link">
+                  Produtos e Serviços
+                </a>
+              </li>
+              <li>
+                <a href="horarios" className="container-link">
+                  Horários
+                </a>
+              </li>
+              <li>
+                <a href="contato" className="container-link">
+                  Contato
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </Container>
     </header>
   );
