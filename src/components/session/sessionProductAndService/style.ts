@@ -5,13 +5,13 @@ export const ProductAndServiceSession = styled.div`
   max-width: 1440px;
 
   h2 {
-    font-size: 2rem;
+    font-size: 32px;
     text-align: center;
     margin-bottom: 20px;
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 24px;
     text-align: center;
   }
 
@@ -22,14 +22,14 @@ export const ProductAndServiceSession = styled.div`
     gap: 20px;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     h2 {
-      font-size: 1.4rem;
+      font-size: 22px;
       margin-bottom: 20px;
     }
 
     h3 {
-      font-size: 1.2rem;
+      font-size: 19px;
       margin: 0 10px;
     }
   }

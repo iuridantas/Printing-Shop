@@ -13,7 +13,7 @@ export const ContactSession = styled.div`
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 32px;
   }
 
 
@@ -23,19 +23,19 @@ export const ContactSession = styled.div`
     align-items: center;
     text-decoration: none;
     color: black;
-    font-size: 1.4rem;
+    font-size: 22px;
     margin: 30px 40px 10px;
   }
 
   h3 {
     display: flex;
-    font-size: 1.4rem;
+    font-size: 22px;
     align-items: center;
   }
 
   p {
     display: flex;
-    font-size: 1.4rem;
+    font-size: 22px;
     align-items: center;
   }
 
@@ -43,7 +43,7 @@ export const ContactSession = styled.div`
     margin-right: 5px;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     
     div{
       flex-direction: column;
@@ -51,21 +51,21 @@ export const ContactSession = styled.div`
     }
 
     h2 {
-      font-size: 1.4rem;
+      font-size: 22px;
       margin: auto;
     }
 
     h3{
-      font-size: 1rem;
+      font-size: 16px;
     }
 
     a {
-      font-size: 1rem;
+      font-size: 16px;
       margin: 5px 0;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 16px;
     }
   }
 `;

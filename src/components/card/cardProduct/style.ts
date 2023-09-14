@@ -17,24 +17,24 @@ export const CardSession = styled.div`
   }
 
   h2 {
-    font-size: 1.5rem !important;
+    font-size: 24px !important;
     text-align: center;
   }
 
   h3 {
-    font-size: 1.3rem !important;
+    font-size: 21px !important;
     text-align: center;
     line-height: 1.5;
   }
 
   p {
     text-align: justify;
-    font-size: 1.3rem;
+    font-size: 21px;
     margin: 5px 10px;
     line-height: 1.5;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     margin: 20px auto;
     width: 90%;
 
@@ -44,15 +44,15 @@ export const CardSession = styled.div`
     }
 
     h2 {
-      font-size: 1.1rem !important;
+      font-size: 18px !important;
     }
 
     h3 {
-      font-size: 1rem !important;
+      font-size: 16px !important;
     }
 
     p {
-      font-size: 1rem !important;
+      font-size: 16px !important;
     }
   }
 `;
@@ -73,14 +73,14 @@ export const FullScreenCard = styled.div`
 
   p {
     text-align: justify;
-    font-size: 2rem;
+    font-size: 32px;
     line-height: 1.5;
     margin: 0 15%;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     p {
-      font-size: 1rem;
+      font-size: 16px;
     }
   }
 `;
@@ -96,7 +96,7 @@ export const ButtonIcon = styled(AiOutlineClose)`
     color: red;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     color: red;
     font-size: 16px;
     margin-top: 10px;
@@ -111,7 +111,7 @@ export const DescriptionIcon = styled(FaQuestionCircle)`
   top: 5px;
   left: 285px;
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     left: 90%;
   }
 `;

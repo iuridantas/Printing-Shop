@@ -12,12 +12,12 @@ export const WhatsAppButton = styled.a`
   left: 96%;
   z-index: 9999;
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     top: 85%;
     left: 2%;
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
     top: 40%;
     left: 93%;
   }
@@ -30,7 +30,7 @@ export const WhatsApp = styled(ImWhatsapp)`
   color: white;
   background-color: green;
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     font-size: 35px;
   }
 `;
@@ -42,7 +42,7 @@ export const LoaderSection = styled.section`
   flex-direction: row;
   margin: 15% 0;
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     margin: 50% 0;
   }
 `;

@@ -46,7 +46,7 @@ export const Container = styled.div`
     display: none;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     div {
       padding: 32px 16px;
     }
@@ -87,45 +87,44 @@ export const Container = styled.div`
       cursor: pointer;
     }
   }
+  @media only screen and (min-width: 768px) and (max-width: 900px) {
+    div {
+      padding: 32px 16px;
+    }
 
-  @media (min-width: 768px) and (max-width: 820px) {
-  div {
-    padding: 32px 16px;
-  }
+    ul {
+      padding: 0 20px;
+      display: block;
+      position: absolute;
+      background-color: #ffffff;
+      width: 100%;
+      top: 194px;
+      right: 0;
+      height: 0;
+      transition: 0.6s;
+      z-index: 1000;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
 
-  ul {
-    padding: 0 20px;
-    display: block;
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    top: 194px;
-    right: 0;
-    height: 0;
-    transition: 0.6s;
-    z-index: 1000;
-    visibility: hidden;
-    overflow-y: hidden;
-  }
+    nav.active ul {
+      height: calc(100vh - 194px);
+      visibility: visible;
+      overflow-y: auto;
+    }
 
-  nav.active ul {
-    height: calc(100vh - 194px);
-    visibility: visible;
-    overflow-y: auto;
-  }
+    a {
+      padding: 16px 0;
+      margin: 16px 0;
+    }
 
-  a {
-    padding: 16px 0;
-    margin: 16px 0;
+    button {
+      display: flex;
+      font-size: 40px;
+      background: none;
+      color: #000000;
+      border: none;
+      cursor: pointer;
+    }
   }
-
-  button {
-    display: flex;
-    font-size: 40px;
-    background: none;
-    color: #000000;
-    border: none;
-    cursor: pointer;
-  }
-}
 `;

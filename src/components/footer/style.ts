@@ -19,7 +19,7 @@ export const Container = styled.div`
   }
 
   p {
-    font-size: 1rem;
+    font-size: 16px;
     padding: 5px 0;
   }
 `;

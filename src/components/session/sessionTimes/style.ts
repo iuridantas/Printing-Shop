@@ -7,13 +7,13 @@ export const TimesSession = styled.div`
   max-width: 1440px;
 
   h2 {
-    font-size: 2rem;
+    font-size: 32px;
     text-align: center;
   }
 
   h3 {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 22px;
     line-height: 1.5;
   }
 
@@ -25,7 +25,7 @@ export const TimesSession = styled.div`
     margin: 0 auto;
     cursor: pointer;
     color: #ef1d2a;
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-top: 10px;
     border-radius: 8px;
     width: 250px;
@@ -40,18 +40,18 @@ export const TimesSession = styled.div`
     transform: translate(0px, -2px);
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     h2 {
-      font-size: 1.4rem;
+      font-size: 22px;
       margin: auto;
     }
 
     h3 {
-      font-size: 1rem;
+      font-size: 16px;
     }
 
     button {
-      font-size: 1rem;
+      font-size: 16px;
       transition: none;
     }
 
