@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { InitialSession } from './style';
 
+const desktopImages = ['/img/fundo.png'];
+const mobileImages = ['/img/fundo_cel.png'];
+
 export function SessionInitial() {
-  const images = ['/img/fundo.png'];
-  const imagesPhone = ['/img/fundo_cel.png'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
@@ -15,7 +16,7 @@ export function SessionInitial() {
       const links = document.querySelectorAll('link[rel="preload"]');
       links.forEach((link) => link.remove());
 
-      const preloadImages = isMobile ? imagesPhone : images;
+      const preloadImages = isMobile ? mobileImages : desktopImages;
       preloadImages.forEach((src) => {
         const link = document.createElement('link');
         link.rel = 'preload';
@@ -37,10 +38,13 @@ export function SessionInitial() {
     setImagesLoaded(true);
   };
 
+  const isMobile = window.innerWidth <= 600;
+  const images = isMobile ? mobileImages : desktopImages;
+
   return (
     <section aria-label="Seção Inicial do Site" id="inicio">
       <InitialSession>
-        {(window.innerWidth <= 600 ? imagesPhone : images).map((src, index) => (
+        {images.map((src, index) => (
           <div
             key={index}
             style={{ display: index === currentImageIndex ? 'block' : 'none' }}
@@ -49,7 +53,7 @@ export function SessionInitial() {
               src={src}
               alt="Foto do Banner sobre banho e tosa"
               onLoad={handleImageLoad}
-              className={`${imagesLoaded ? '' : 'image-loading'}`}
+              className={imagesLoaded ? '' : 'image-loading'}
             />
           </div>
         ))}

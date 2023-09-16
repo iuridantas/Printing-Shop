@@ -8,50 +8,38 @@ export function Header() {
     const nav = document.getElementById('nav');
 
     function toggleMenu(event: MouseEvent) {
-      if (nav) {
-        nav.classList.toggle('active');
-        const active = nav.classList.contains('active');
-        (event.currentTarget as HTMLElement).setAttribute(
-          'aria-expanded',
-          active.toString(),
-        );
-        if (active) {
-          (event.currentTarget as HTMLElement).setAttribute(
-            'aria-label',
-            'Fechar Menu',
-          );
-        } else {
-          (event.currentTarget as HTMLElement).setAttribute(
-            'aria-label',
-            'Abrir Menu',
-          );
-        }
-      }
+      if (!nav) return;
+      nav.classList.toggle('active');
+      const active = nav.classList.contains('active');
+      (event.currentTarget as HTMLElement).setAttribute(
+        'aria-expanded',
+        active.toString(),
+      );
+      (event.currentTarget as HTMLElement).setAttribute(
+        'aria-label',
+        active ? 'Fechar Menu' : 'Abrir Menu',
+      );
     }
 
     btnMobile?.addEventListener('click', toggleMenu);
+
+    function scrollToTarget(target: string) {
+      const targetElement = document.getElementById(target);
+      if (!targetElement) return;
+      const headerHeight =
+        (document.querySelector('header') as HTMLElement)?.offsetHeight || 0;
+      const targetOffset = targetElement.offsetTop - headerHeight;
+      window.scrollTo({ top: targetOffset, behavior: 'smooth' });
+      if (nav) nav.classList.remove('active');
+    }
 
     const navLinks = document.querySelectorAll('#menu a');
 
     navLinks.forEach((link) => {
       link.addEventListener('click', (event) => {
         event.preventDefault();
-        const target = link.getAttribute('href');
-        if (target) {
-          const targetElement = document.getElementById(target);
-          if (targetElement) {
-            const headerHeight =
-              document.querySelector('header')?.offsetHeight || 0;
-            const targetOffset = targetElement.offsetTop - headerHeight;
-            window.scrollTo({
-              top: targetOffset,
-              behavior: 'smooth',
-            });
-          }
-        }
-        if (nav) {
-          nav.classList.remove('active');
-        }
+        const target = (event.target as HTMLElement).getAttribute('href');
+        if (target) scrollToTarget(target);
       });
     });
 
@@ -61,22 +49,8 @@ export function Header() {
       navLinks.forEach((link) => {
         link.addEventListener('click', (event) => {
           event.preventDefault();
-          const target = link.getAttribute('href');
-          if (target) {
-            const targetElement = document.getElementById(target);
-            if (targetElement) {
-              const headerHeight =
-                document.querySelector('header')?.offsetHeight || 0;
-              const targetOffset = targetElement.offsetTop - headerHeight;
-              window.scrollTo({
-                top: targetOffset,
-                behavior: 'smooth',
-              });
-            }
-          }
-          if (nav) {
-            nav.classList.remove('active');
-          }
+          const target = (event.target as HTMLElement).getAttribute('href');
+          if (target) scrollToTarget(target);
         });
       });
     };

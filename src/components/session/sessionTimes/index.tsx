@@ -4,8 +4,7 @@ import { ptBR } from 'date-fns/locale';
 import { TimesSession } from './style';
 
 export function SessionTimes() {
-  
-  const week = [
+  const daysOfWeek = [
     'Segunda',
     'Terça',
     'Quarta',
@@ -15,8 +14,8 @@ export function SessionTimes() {
     'Domingo',
     'Feriado',
   ];
-  
-  const hours = [
+
+  const openingHours = [
     '08:00 às 18:00',
     '08:00 às 18:00',
     '08:00 às 18:00',
@@ -29,7 +28,7 @@ export function SessionTimes() {
 
   const [showAllHours, setShowAllHours] = useState(false);
 
-  const handleClick = () => {
+  const toggleShowAllHours = () => {
     setShowAllHours(!showAllHours);
   };
 
@@ -47,18 +46,18 @@ export function SessionTimes() {
           <h3>
             Hoje ({capitalize(format(currentDate, 'iiii', { locale: ptBR }))})
           </h3>
-          <h3>{hours[(getDay(currentDate) + 6) % 7]}</h3>
+          <h3>{openingHours[(getDay(currentDate) + 6) % 7]}</h3>
         </div>
         {showAllHours && (
           <div>
-            {week.map((day, index) => (
+            {daysOfWeek.map((day, index) => (
               <h3 key={day}>
-                {day}: {hours[index]}
+                {day}: {openingHours[index]}
               </h3>
             ))}
           </div>
         )}
-        <button onClick={handleClick}>
+        <button onClick={toggleShowAllHours}>
           {showAllHours ? 'Ver menos' : 'Ver todos os horários'}
         </button>
       </TimesSession>

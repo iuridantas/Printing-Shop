@@ -6,7 +6,7 @@ export function SessionProductAndService() {
   return (
     <section aria-label="Seção dos produtos e serviços" id="produtos-servicos">
       <ProductAndServiceSession>
-        <h2 id="#produtos-servicos">Nossos produtos e serviços</h2>
+        <h2>Nossos produtos e serviços</h2>
         <h3>Serviços de Impressão Digital</h3>
         <section aria-label="card dos produtos">
           <CardProduct />
