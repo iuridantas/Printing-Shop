@@ -51,7 +51,7 @@ export function SessionInitial() {
           >
             <img
               src={src}
-              alt="Foto do Banner sobre banho e tosa"
+              alt="Foto do Banner sobre JP Print"
               onLoad={handleImageLoad}
               className={imagesLoaded ? '' : 'image-loading'}
             />
