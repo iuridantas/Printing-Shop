@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
 
   @media only screen and (max-width: 600px) {
-    padding-bottom: 10px;
+    padding-bottom: 16px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
