@@ -11,8 +11,8 @@ export const Container = styled.div`
   }
 
   img {
-    width: 130px;
-    height: 130px;
+    width: auto;
+    height: 160px;
   }
 
   ul {
@@ -47,6 +47,11 @@ export const Container = styled.div`
   }
 
   @media only screen and (max-width: 600px) {
+    img {
+      width: auto;
+      height: 130px;
+    }
+
     div {
       padding: 32px 16px;
     }
@@ -98,7 +103,7 @@ export const Container = styled.div`
       position: absolute;
       background-color: #ffffff;
       width: 100%;
-      top: 194px;
+      top: 224px;
       right: 0;
       height: 0;
       transition: 0.6s;
@@ -108,7 +113,7 @@ export const Container = styled.div`
     }
 
     nav.active ul {
-      height: calc(100vh - 194px);
+      height: calc(100vh - 224px);
       visibility: visible;
       overflow-y: auto;
     }

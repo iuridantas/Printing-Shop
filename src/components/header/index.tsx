@@ -61,7 +61,7 @@ export function Header() {
       <Container aria-label="Menu de navegação principal">
         <div>
           <img
-            src="/img/logo.jpeg"
+            src="/img/logo.png"
             alt="logo"
             aria-label="Logotipo da JPrint Digital"
           />
