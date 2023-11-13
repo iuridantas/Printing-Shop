@@ -12,7 +12,7 @@ export const Container = styled.div`
 
   img {
     width: auto;
-    height: 160px;
+    height: 130px;
   }
 
   ul {
@@ -49,7 +49,7 @@ export const Container = styled.div`
   @media only screen and (max-width: 600px) {
     img {
       width: auto;
-      height: 130px;
+      height: 100px;
     }
 
     div {
@@ -62,7 +62,7 @@ export const Container = styled.div`
       position: absolute;
       background-color: #ffffff;
       width: 100%;
-      top: 194px;
+      top: 164px;
       right: 0;
       height: 0;
       transition: 0.6s;
@@ -72,7 +72,7 @@ export const Container = styled.div`
     }
 
     nav.active ul {
-      height: calc(100vh - 194px);
+      height: calc(100vh - 164px);
       visibility: visible;
       overflow-y: auto;
     }
@@ -103,7 +103,7 @@ export const Container = styled.div`
       position: absolute;
       background-color: #ffffff;
       width: 100%;
-      top: 224px;
+      top: 194px;
       right: 0;
       height: 0;
       transition: 0.6s;
@@ -113,7 +113,7 @@ export const Container = styled.div`
     }
 
     nav.active ul {
-      height: calc(100vh - 224px);
+      height: calc(100vh - 194px);
       visibility: visible;
       overflow-y: auto;
     }
